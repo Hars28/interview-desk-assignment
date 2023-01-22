@@ -7,8 +7,8 @@ import {BiUserPin} from "react-icons/bi"
 const GridSection = ({data}) => {
   return (
     <>
-    <Tabs w="70%" m="auto" mt="30px" border-top={"2px solid"}>
-  <TabList >
+    <Tabs w="70%" m="auto" mt="30px" >
+  <TabList>
     <Flex m="auto" justify={"center"}>
     <Tab>
     <Flex justify="center" gap="5px" alignItems="center">
@@ -32,8 +32,8 @@ const GridSection = ({data}) => {
   </TabList>
 
   <TabPanels>
-    <TabPanel>
-        <SimpleGrid columns={[2,2,3,3]} spacing="15px">
+    <TabPanel w="100%" margin="auto">
+        <SimpleGrid  columns={3} spacing="15px" margin="auto">
           {data.map((el)=>(
             <Box key={el.id}>
                 <Image src={el.url} alt="post-img"/>
@@ -42,7 +42,7 @@ const GridSection = ({data}) => {
         </SimpleGrid>
     </TabPanel>
     <TabPanel>
-    <SimpleGrid columns={[1,2,3,3]} spacing="15px">
+    <SimpleGrid columns={3} spacing="15px">
           {data.map((el)=>(
             <Box key={el.id}>
                 <Image src={el.url} alt="post-img"/>
@@ -51,7 +51,7 @@ const GridSection = ({data}) => {
         </SimpleGrid>
     </TabPanel>
     <TabPanel>
-    <SimpleGrid columns={[1,2,3,3]} spacing="15px">
+    <SimpleGrid columns={3} spacing="15px">
           {data.map((el)=>(
             <Box key={el.id}>
                 <Image src={el.url} alt="post-img"/>

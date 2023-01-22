@@ -13,7 +13,7 @@ export const getUser = (setUser) => {
 
 export const getData = (setData) => {
     try{
-     fetch('http://jsonplaceholder.typicode.com/photos')
+     fetch('https://jsonplaceholder.typicode.com/photos?-page=1&_limit=30')
      .then((res)=>res.json())
      .then((res)=>{
         setData(res)
