@@ -3,7 +3,6 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { getData, getUser } from '../apis'
 import GridSection from '../components/GridSection'
-import Sidebar from '../components/Sidebar'
 
 import Topsection from '../components/Topsection'
 const Home = () => {
